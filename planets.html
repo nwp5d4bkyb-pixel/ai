@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태양계 여행 | 행성 소개</title>
+  <meta name="description" content="수성부터 해왕성까지 여덟 행성의 특징과 기본 정보.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪐</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">🪐 태양계 여행</a>
+      <nav class="nav">
+        <a href="index.html">홈</a>
+        <a href="planets.html">행성 소개</a>
+        <a href="compare.html">행성 비교</a>
+      </nav>
+      <button class="menu-btn" aria-label="메뉴 열기">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <h1>행성 소개</h1>
+      <p>태양에서 가까운 순서대로 여덟 행성을 소개합니다</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-type="all">전체</button>
+      <button class="filter-btn" data-type="rocky">암석형</button>
+      <button class="filter-btn" data-type="gas">가스형</button>
+      <button class="filter-btn" data-type="ice">얼음형</button>
+    </div>
+
+    <div id="planet-list"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> 태양계 여행 · 정보 제공용 사이트 · 이미지: NASA (공개 이미지)</div>
+  </footer>
+
+  <script src="js/planets.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

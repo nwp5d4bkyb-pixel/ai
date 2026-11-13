@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태양계 여행 | 행성 비교</title>
+  <meta name="description" content="여덟 행성의 크기, 거리, 공전 주기를 한눈에 비교합니다.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪐</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">🪐 태양계 여행</a>
+      <nav class="nav">
+        <a href="index.html">홈</a>
+        <a href="planets.html">행성 소개</a>
+        <a href="compare.html">행성 비교</a>
+      </nav>
+      <button class="menu-btn" aria-label="메뉴 열기">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <h1>행성 비교</h1>
+      <p>여덟 행성의 크기와 거리를 한눈에 비교해 보세요</p>
+    </div>
+
+    <section class="section">
+      <div class="section-title reveal">
+        <h2>실제 크기 비율</h2>
+        <p>지름 비율을 그대로 줄인 모습입니다</p>
+      </div>
+      <div class="size-line reveal" id="size-line"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title reveal">
+        <h2>숫자로 비교하기</h2>
+        <p>버튼을 눌러 기준을 바꿔 보세요</p>
+      </div>
+      <div class="tabs">
+        <button class="filter-btn active" data-mode="diameter">지름</button>
+        <button class="filter-btn" data-mode="distance">태양과의 거리</button>
+        <button class="filter-btn" data-mode="year">공전 주기</button>
+      </div>
+      <div class="bars" id="bars"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title reveal">
+        <h2>정보 한눈에 보기</h2>
+      </div>
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>행성</th><th>종류</th><th>지름</th><th>태양과의 거리</th>
+              <th>하루</th><th>1년</th><th>위성 수</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section credits reveal">
+      <h3>자료 및 이미지 출처</h3>
+      <p>행성 정보는 NASA 공개 자료를 바탕으로 정리했습니다. 위성 수는 새로운 발견에 따라 바뀔 수 있습니다.</p>
+      <p>모든 사진은 위키미디어 공용(Wikimedia Commons)에 공개된 퍼블릭 도메인 이미지입니다.</p>
+      <ul>
+        <li>태양: NASA/SDO (AIA)</li>
+        <li>수성: NASA/Johns Hopkins University APL/Carnegie Institution of Washington</li>
+        <li>금성: NASA</li>
+        <li>지구: NASA/Apollo 17</li>
+        <li>화성: NASA/USGS (바이킹 궤도선)</li>
+        <li>목성: NASA, ESA, A. Simon (GSFC)</li>
+        <li>토성: NASA/JPL/Space Science Institute (카시니)</li>
+        <li>천왕성: NASA/JPL-Caltech (보이저 2호)</li>
+        <li>해왕성: NASA (보이저 2호)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> 태양계 여행 · 정보 제공용 사이트 · 이미지: NASA (공개 이미지)</div>
+  </footer>
+
+  <script src="js/planets.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
